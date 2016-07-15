@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.weitao.jony.dao.AreaDao">
+
+    <select id="loadCity" resultType="java.util.HashMap">
+        select id,code,name,provincecode from city
+    </select>
+    
+    <select id="loadProvince" resultType="java.util.HashMap">
+        select id,code,name from province
+    </select>
+    
+    <select id="loadArea" resultType="java.util.HashMap">
+        select id,areaID,area,fatherID from area
+    </select>
+    
+</mapper>

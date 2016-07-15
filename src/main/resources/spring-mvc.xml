@@ -35,4 +35,5 @@
             </bean>
         </mvc:message-converters>
     </mvc:annotation-driven>
+    <mvc:view-controller path="/" view-name="redirect:/index.do"/>
 </beans>
